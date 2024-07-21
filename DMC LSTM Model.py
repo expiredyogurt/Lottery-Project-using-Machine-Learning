@@ -14,7 +14,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 
 # Read the CSV file
-df = pd.read_csv('/Users/kevinloke/Desktop/Lottery Project/DMC/DMC Latest Result.csv')
+df = pd.read_csv('/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC Latest Result.csv')
 
 # Loop through each column in the DataFrame
 for column in df.columns:
@@ -33,7 +33,7 @@ threshold_date = datetime.now() - timedelta(days=99999)
 df = df[df['DrawDate'] > threshold_date]
 
 # Save the modified DataFrame back to a CSV file named '4DPP.csv'
-df.to_csv('/Users/kevinloke/Desktop/Lottery Project/DMC/DMC4DPP.csv', index=False)
+df.to_csv('/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC4DPP.csv', index=False)
 
 df.head()
 
@@ -53,7 +53,7 @@ import pandas as pd
 
 # Assuming your original dataset is stored in 'original_dataset.csv'
 # Load the original dataset
-original_dataset = pd.read_csv('/Users/kevinloke/Desktop/Lottery Project/DMC/DMC4DPP.csv')
+original_dataset = pd.read_csv('/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC4DPP.csv')
 
 # Select only the desired columns
 selected_columns = ['1stPrizeNo', '2ndPrizeNo', '3rdPrizeNo', 'SpecialNo1', 'SpecialNo2', 
@@ -66,7 +66,7 @@ selected_columns = ['1stPrizeNo', '2ndPrizeNo', '3rdPrizeNo', 'SpecialNo1', 'Spe
 selected_data = original_dataset[selected_columns]
 
 # Save the selected data to a new CSV file named '4DPP.csv'
-selected_data.to_csv('/Users/kevinloke/Desktop/Lottery Project/DMC/DMC4DPP.csv', index=False)
+selected_data.to_csv('/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC4DPP.csv', index=False)
 
 selected_data.tail()
 
@@ -91,7 +91,7 @@ from art import text2art
 from datetime import datetime
 
 today_date = datetime.now().strftime('%d %b %Y')
-filename = f"/Users/kevinloke/Desktop/Lottery Project/DMC/DMC LotteryAI Prediction {today_date}.csv"
+filename = f"/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC LotteryAI Prediction {today_date}.csv"
 
 
 
@@ -113,7 +113,7 @@ def print_intro():
 # Function to load data from a file and preprocess it
 def load_data():
     # Load data from file, ignoring white spaces and accepting unlimited length numbers
-    data = np.genfromtxt('/Users/kevinloke/Desktop/Lottery Project/DMC/DMC4DPP.csv', delimiter=',', dtype=int)
+    data = np.genfromtxt('/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC4DPP.csv', delimiter=',', dtype=int)
     # Replace all -1 values with 0
     data[data == -1] = 0
     # Split data into training and validation sets
@@ -161,7 +161,7 @@ def predict_numbers(model, val_data, num_features, num_sets=10):
 # Function to save predicted numbers to a CSV file with today's date in the filename
 def save_predicted_numbers_to_csv(all_predicted_numbers, header_labels):
     today_date = datetime.now().strftime('%d %b %Y')
-    filename = f"/Users/kevinloke/Desktop/Lottery Project/DMC/DMC LotteryAI Prediction {today_date}.csv"
+    filename = f"/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC LotteryAI Prediction {today_date}.csv"
     
     # Add the header labels as a separate row in the CSV file
     with open(filename, 'w') as file:
@@ -209,7 +209,7 @@ def main():
 
    # Call the function with the desired file name
    today_date = datetime.now().strftime('%d %b %Y')
-   filename = f"/Users/kevinloke/Desktop/Lottery Project/DMC/DMC LotteryAI Prediction {today_date}.csv"
+   filename = f"/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC LotteryAI Prediction {today_date}.csv"
    
     # Header labels for the CSV file
    header_labels = [
