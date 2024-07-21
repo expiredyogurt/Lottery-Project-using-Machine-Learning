@@ -16,7 +16,7 @@ from tqdm import tqdm  # Import tqdm for progress bar
 random.seed(53846)
 
 # Load the dataset
-data = pd.read_csv('/Users/kevinloke/Desktop/Lottery Project/DMC/DMC Latest Result.csv')
+data = pd.read_csv('/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC Latest Result.csv')
 
 # Remove leading and trailing whitespaces from column names
 data.columns = data.columns.str.strip()
@@ -52,7 +52,7 @@ updated_data['Winnings'].fillna('No', inplace=True)
 updated_data['Winnings'] = updated_data['Winnings'].str.strip()
 
 # Save the updated data to a CSV file
-updated_data.to_csv('/Users/kevinloke/Desktop/Lottery Project/DMC/DMC4D_Latest_Result_PreProcessed.csv', index=False)
+updated_data.to_csv('/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC4D_Latest_Result_PreProcessed.csv', index=False)
 
 # Display the shape of the updated DataFrame
 print("Shape of the updated DataFrame:", updated_data.shape)
@@ -77,7 +77,7 @@ from tensorflow.keras.layers import Dense
 from tqdm import tqdm
 
 # Load the dataset
-data = pd.read_csv('/Users/kevinloke/Desktop/Lottery Project/DMC/DMC4D_Latest_Result_PreProcessed.csv')
+data = pd.read_csv('/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC4D_Latest_Result_PreProcessed.csv')
 
 # Replace empty cells or null values in the 'Winnings' column with 'No'
 data['Winnings'].fillna('No', inplace=True)
@@ -179,7 +179,7 @@ today_date = datetime.now().strftime('%d %b %Y')
 file_name = f'DMC NN Prediction {today_date}.csv'
 
 # Specify the directory where you want to save the file
-output_directory = '/Users/kevinloke/Desktop/Lottery Project/DMC/'
+output_directory = '/Users/expiredyogurt/Desktop/Lottery Project/DMC/'
 
 # Combine the directory and file name to create the full file path
 output_file_path = os.path.join(output_directory, file_name)
@@ -422,7 +422,7 @@ formatted_df.to_csv(output_file_path, index=False)
 # today_date = datetime.now().strftime('%d %b %Y')
 # 
 # # Define the filename with today's date
-# filename = f'/Users/kevinloke/Desktop/Lottery Project/4D Random Forest Reg Prediction {today_date}.csv'
+# filename = f'/Users/expiredyogurt/Desktop/Lottery Project/4D Random Forest Reg Prediction {today_date}.csv'
 # 
 # # Save the DataFrame to a CSV file
 # df_top_10.to_csv(filename, index=False)
@@ -528,7 +528,7 @@ df_top_10.drop(columns=['Drawn Numbers'], inplace=True)
 today_date = datetime.now().strftime('%d %b %Y')
 
 # Define the filename with today's date
-filename = f'/Users/kevinloke/Desktop/Lottery Project/DMC/DMC Random Forest Reg Prediction {today_date}.csv'
+filename = f'/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC Random Forest Reg Prediction {today_date}.csv'
 
 # Save the DataFrame to a CSV file
 df_top_10.to_csv(filename, index=False)
