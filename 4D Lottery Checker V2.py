@@ -175,11 +175,11 @@ from datetime import date
 today_date = date.today().strftime('%d %b %Y')
 
 # Define the file paths for the CSV files
-deepL_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/4D DeepL Prediction {today_date}.csv'
-xgb_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/4D XGB Prediction {today_date}.csv'
-nn_v3_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/4D NN Prediction {today_date}.csv'
-xgb_v3_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/4D Random Forest Reg Prediction {today_date}.csv'
-lotteryAI_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/LotteryAI Prediction {today_date}.csv'
+deepL_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/4D DeepL Prediction {today_date}.csv'
+xgb_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/4D XGB Prediction {today_date}.csv'
+nn_v3_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/4D NN Prediction {today_date}.csv'
+xgb_v3_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/4D Random Forest Reg Prediction {today_date}.csv'
+lotteryAI_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/LotteryAI Prediction {today_date}.csv'
 
 # Read and preprocess the CSV files and ensure numbers are stripped of whitespace and converted to int
 def read_and_preprocess_csv(csv_file_path):
@@ -318,11 +318,11 @@ from datetime import date
 today_date = date.today().strftime('%d %b %Y')
 
 # Define the file paths for the CSV files
-deepL_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/DMC/DMC DeepL Prediction {today_date}.csv'
-xgb_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/DMC/DMC XGB Prediction {today_date}.csv'
-nn_v3_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/DMC/DMC NN Prediction {today_date}.csv'
-xgb_v3_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/DMC/DMC Random Forest Reg Prediction {today_date}.csv'
-lotteryAI_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/DMC/DMC LotteryAI Prediction {today_date}.csv'
+deepL_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC DeepL Prediction {today_date}.csv'
+xgb_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC XGB Prediction {today_date}.csv'
+nn_v3_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC NN Prediction {today_date}.csv'
+xgb_v3_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC Random Forest Reg Prediction {today_date}.csv'
+lotteryAI_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC LotteryAI Prediction {today_date}.csv'
 
 # Read and preprocess the CSV files and ensure numbers are stripped of whitespace and converted to int
 def read_and_preprocess_csv(csv_file_path):
@@ -507,14 +507,14 @@ def highlight_matched_cells(csv_name, df, matched_permutations, output_directory
 today_date = date.today().strftime('%d %b %Y')
 
 # Define the archive directory path
-archive_directory = '/Users/kevinloke/Desktop/Lottery Project/Archive/'
+archive_directory = '/Users/expiredyogurt/Desktop/Lottery Project/Archive/'
 
 # Define the file paths for the CSV files
-deepL_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/4D DeepL Prediction {today_date}.csv'
-xgb_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/4D XGB Prediction {today_date}.csv'
-nn_v3_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/4D NN Prediction {today_date}.csv'
-lotteryAI_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/LotteryAI Prediction {today_date}.csv'
-random_forest_file_path = f'/Users/kevinloke/Desktop/Lottery Project/4D Random Forest Reg Prediction {today_date}.csv'
+deepL_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/4D DeepL Prediction {today_date}.csv'
+xgb_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/4D XGB Prediction {today_date}.csv'
+nn_v3_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/4D NN Prediction {today_date}.csv'
+lotteryAI_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/LotteryAI Prediction {today_date}.csv'
+random_forest_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/4D Random Forest Reg Prediction {today_date}.csv'
 
 # Read and preprocess the CSV files
 deepL_df = read_and_preprocess_csv(deepL_csv_file_path)
@@ -620,12 +620,12 @@ from datetime import date
 today_date = date.today().strftime('%d %b %Y')
 
 # Define the file paths for the CSV files
-deepL_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/DMC/DMC DeepL Prediction {today_date}.csv'
-xgb_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/DMC/DMC XGB Prediction {today_date}.csv'
-nn_v3_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/DMC/DMC NN Prediction {today_date}.csv'
-xgb_v3_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/DMC/DMC Random Forest Reg Prediction {today_date}.csv'
-lotteryAI_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/DMC/DMC LotteryAI Prediction {today_date}.csv'
-lstm_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/DMC/DMC LSTM Top 3 Prediction {today_date}.csv'
+deepL_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC DeepL Prediction {today_date}.csv'
+xgb_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC XGB Prediction {today_date}.csv'
+nn_v3_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC NN Prediction {today_date}.csv'
+xgb_v3_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC Random Forest Reg Prediction {today_date}.csv'
+lotteryAI_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC LotteryAI Prediction {today_date}.csv'
+lstm_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC LSTM Top 3 Prediction {today_date}.csv'
 
 
 # Read and preprocess the CSV files and ensure numbers are stripped of whitespace and converted to int
@@ -760,7 +760,7 @@ today_date = date.today()
 today_date_yyyymmdd_int = datetime.datetime.now().strftime('%Y-%m-%d')
 
 # Define the file path for the existing CSV file
-existing_csv_file_path = '/Users/kevinloke/Desktop/Lottery Project/DMC/DMC Latest Result.csv'
+existing_csv_file_path = '/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC Latest Result.csv'
 
 # Read the existing CSV file
 existing_df = pd.read_csv(existing_csv_file_path)
@@ -875,15 +875,15 @@ def highlight_matched_cells(csv_name, df, matched_permutations, output_directory
 today_date = date.today().strftime('%d %b %Y')
 
 # Define the archive directory path
-archive_directory = '/Users/kevinloke/Desktop/Lottery Project/DMC/Archive/'
+archive_directory = '/Users/expiredyogurt/Desktop/Lottery Project/DMC/Archive/'
 
 # Define the file paths for the CSV files
-deepL_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/DMC/DMC DeepL Prediction {today_date}.csv'
-xgb_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/DMC/DMC XGB Prediction {today_date}.csv'
-nn_v3_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/DMC/DMC NN Prediction {today_date}.csv'
-lotteryAI_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/DMC/DMC LotteryAI Prediction {today_date}.csv'
-random_forest_file_path = f'/Users/kevinloke/Desktop/Lottery Project/DMC/DMC Random Forest Reg Prediction {today_date}.csv'
-lstm_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/DMC/DMC LSTM Top 3 Prediction {today_date}.csv'
+deepL_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC DeepL Prediction {today_date}.csv'
+xgb_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC XGB Prediction {today_date}.csv'
+nn_v3_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC NN Prediction {today_date}.csv'
+lotteryAI_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC LotteryAI Prediction {today_date}.csv'
+random_forest_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC Random Forest Reg Prediction {today_date}.csv'
+lstm_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC LSTM Top 3 Prediction {today_date}.csv'
 
 
 # Read and preprocess the CSV files
@@ -1011,11 +1011,11 @@ from datetime import date
 today_date = date.today().strftime('%d %b %Y')
 
 # Define the file paths for the CSV files
-deepL_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/Magnum/Magnum DeepL Prediction {today_date}.csv'
-xgb_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/Magnum/Magnum XGB Prediction {today_date}.csv'
-nn_v3_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/Magnum/Magnum NN Prediction {today_date}.csv'
-xgb_v3_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/Magnum/Magnum Random Forest Reg Prediction {today_date}.csv'
-lotteryAI_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/Magnum/Magnum LotteryAI Prediction {today_date}.csv'
+deepL_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/Magnum/Magnum DeepL Prediction {today_date}.csv'
+xgb_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/Magnum/Magnum XGB Prediction {today_date}.csv'
+nn_v3_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/Magnum/Magnum NN Prediction {today_date}.csv'
+xgb_v3_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/Magnum/Magnum Random Forest Reg Prediction {today_date}.csv'
+lotteryAI_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/Magnum/Magnum LotteryAI Prediction {today_date}.csv'
 
 # Read and preprocess the CSV files and ensure numbers are stripped of whitespace and converted to int
 def read_and_preprocess_csv(csv_file_path):
@@ -1144,7 +1144,7 @@ today_date = date.today()
 today_date_yyyymmdd_int = int(today_date.strftime('%Y%m%d'))
 
 # Define the file path for the existing CSV file
-existing_csv_file_path = '/Users/kevinloke/Desktop/Lottery Project/Magnum/Magnum Latest Result.csv'
+existing_csv_file_path = '/Users/expiredyogurt/Desktop/Lottery Project/Magnum/Magnum Latest Result.csv'
 
 # Read the existing CSV file
 existing_df = pd.read_csv(existing_csv_file_path)
@@ -1255,14 +1255,14 @@ def highlight_matched_cells(csv_name, df, matched_permutations, output_directory
 today_date = date.today().strftime('%d %b %Y')
 
 # Define the archive directory path
-archive_directory = '/Users/kevinloke/Desktop/Lottery Project/Magnum/Archive/'
+archive_directory = '/Users/expiredyogurt/Desktop/Lottery Project/Magnum/Archive/'
 
 # Define the file paths for the CSV files
-deepL_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/Magnum/Magnum DeepL Prediction {today_date}.csv'
-xgb_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/Magnum/Magnum XGB Prediction {today_date}.csv'
-nn_v3_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/Magnum/Magnum NN Prediction {today_date}.csv'
-lotteryAI_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/Magnum/Magnum LotteryAI Prediction {today_date}.csv'
-lstm_csv_file_path = f'/Users/kevinloke/Desktop/Lottery Project/Magnum/Magnum LSTM Top 3 Prediction {today_date}.csv'
+deepL_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/Magnum/Magnum DeepL Prediction {today_date}.csv'
+xgb_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/Magnum/Magnum XGB Prediction {today_date}.csv'
+nn_v3_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/Magnum/Magnum NN Prediction {today_date}.csv'
+lotteryAI_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/Magnum/Magnum LotteryAI Prediction {today_date}.csv'
+lstm_csv_file_path = f'/Users/expiredyogurt/Desktop/Lottery Project/Magnum/Magnum LSTM Top 3 Prediction {today_date}.csv'
 
 
 # Read and preprocess the CSV files
