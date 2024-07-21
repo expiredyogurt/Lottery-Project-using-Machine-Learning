@@ -74,12 +74,12 @@ def write_to_csv(data, output_file):
         for row in data:
             writer.writerow(row)
 
-existing_numbers = read_existing_numbers('/Users/kevinloke/Desktop/Lottery Project/DMC/DMC Latest Result.csv')
+existing_numbers = read_existing_numbers('/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC Latest Result.csv')
 empty_cell_index = find_first_empty_cell(existing_numbers)
 total_new_numbers = 5000
 new_combined_data = generate_lottery_numbers(existing_numbers, empty_cell_index, total_new_numbers)
 
-write_to_csv(new_combined_data, '/Users/kevinloke/Desktop/Lottery Project/DMC/DMC_updated_data_for_train_test.csv')
+write_to_csv(new_combined_data, '/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC_updated_data_for_train_test.csv')
 
 
 # In[6]:
@@ -94,7 +94,7 @@ write_to_csv(new_combined_data, '/Users/kevinloke/Desktop/Lottery Project/DMC/DM
 import pandas as pd
 
 # Load the new dataset
-new_data = pd.read_csv('/Users/kevinloke/Desktop/Lottery Project/DMC/DMC_updated_data_for_train_test.csv')
+new_data = pd.read_csv('/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC_updated_data_for_train_test.csv')
 
 # Trim leading and trailing whitespaces from column names
 new_data.columns = new_data.columns.str.strip()
@@ -103,7 +103,7 @@ new_data.columns = new_data.columns.str.strip()
 new_data['Winnings'].fillna('No', inplace=True)
 
 # Save the modified DataFrame back to the same CSV file
-new_data.to_csv('/Users/kevinloke/Desktop/Lottery Project/DMC/DMC_updated_data_for_train_test.csv', index=False)
+new_data.to_csv('/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC_updated_data_for_train_test.csv', index=False)
 
 # View the first few rows of the DataFrame
 print("Head of the DataFrame:")
@@ -132,7 +132,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 
 # Load the dataset
-data = pd.read_csv('/Users/kevinloke/Desktop/Lottery Project/DMC/DMC_updated_data_for_train_test.csv')
+data = pd.read_csv('/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC_updated_data_for_train_test.csv')
 
 # Replace 'Yes' with 1 and 'No' with 0 in the 'Winnings' column
 data['Winnings'] = data['Winnings'].map({'Yes': 1, 'No': 0})
@@ -279,7 +279,7 @@ today_date = datetime.now().strftime('%d %b %Y')
 file_name = f'DMC DeepL Prediction {today_date}.csv'
 
 # Specify the full path including the directory where you want to save the file
-output_directory = '/Users/kevinloke/Desktop/Lottery Project/DMC/'
+output_directory = '/Users/expiredyogurt/Desktop/Lottery Project/DMC/'
 file_path = os.path.join(output_directory, file_name)
 
 # Save the predictions to a CSV file
@@ -319,7 +319,7 @@ import xgboost as xgb
 np.random.seed(53846)
 
 # Load the dataset
-data = pd.read_csv('/Users/kevinloke/Desktop/Lottery Project/DMC/DMC_updated_data_for_train_test.csv')
+data = pd.read_csv('/Users/expiredyogurt/Desktop/Lottery Project/DMC/DMC_updated_data_for_train_test.csv')
 
 # Replace 'Yes' with 1 and 'No' with 0 in the 'Winnings' column
 data['Winnings'] = data['Winnings'].map({'Yes': 1, 'No': 0})
@@ -428,7 +428,7 @@ XGB_lottery_numbers_df = pd.DataFrame(XGB_top_sets_df['Lottery Numbers'].to_list
 ])
 
 # Specify the directory where you want to save the file
-output_directory = '/Users/kevinloke/Desktop/Lottery Project/DMC/'
+output_directory = '/Users/expiredyogurt/Desktop/Lottery Project/DMC/'
 
 # Get today's date in the desired format
 today_date = datetime.now().strftime('%d %b %Y')
